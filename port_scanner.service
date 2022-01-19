@@ -1,0 +1,9 @@
+[Unit]
+Description=My test service
+After=multi-user.target
+[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3.10 /home/victory/port_scanner.py
+[Install]
+WantedBy=multi-user.target
