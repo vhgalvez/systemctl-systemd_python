@@ -11,9 +11,9 @@ try:
     for port in range(1, 65535):
         net = socket. socket(socket .AF_INET, socket.SOCK_STREAM)
         socket.setdefaulttimeout(1)
-        resultado = net.connect_ex((ip, port))
+        result = net.connect_ex((ip, port))
 
-        if resultado == 0:
+        if result == 0:
 
             logging.basicConfig(
             level=logging.INFO,
