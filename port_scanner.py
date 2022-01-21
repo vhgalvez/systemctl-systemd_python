@@ -35,5 +35,4 @@ try:
         net.close()
 
 except:
-    print("__Exit__")
-    sys.exit(0)
+    print("__Exit_
