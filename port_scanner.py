@@ -3,7 +3,6 @@ import logging
 import sys
 import os
 
-
 hostname = socket.gethostname()
 ip = socket.gethostbyname(hostname)
 
@@ -30,10 +29,10 @@ try:
                 logging.info('So should this')
                 logging.warning('And this, too')
                 logging.error('Testing non-ASCII character, Ø and ö')
-                logging.info('El puerto {} está abierto'. format(port) + os.linesep)
+                logging.info('the port{} it is open'. format(port) + os.linesep)
 
         s.close()
 
 except:
-    print("In Saliendo . .. ")
+    print("__Exit__")
     sys.exit(0)
