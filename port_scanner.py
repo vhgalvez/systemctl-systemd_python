@@ -9,9 +9,9 @@ ip = socket.gethostbyname(hostname)
 
 try:
     for port in range(1, 65535):
-        s = socket. socket(socket .AF_INET, socket.SOCK_STREAM)
+        net = socket. socket(socket .AF_INET, socket.SOCK_STREAM)
         socket.setdefaulttimeout(1)
-        resultado = s.connect_ex((ip, port))
+        resultado = net.connect_ex((ip, port))
 
         if resultado == 0:
 
@@ -30,10 +30,10 @@ try:
                 logging.info('So should this')
                 logging.warning('And this, too')
                 logging.error('Testing non-ASCII character, Ø and ö')
-                logging.info('El puerto {} está abierto'. format(port) + os.linesep)
+                logging.info('the port {} it is open'. format(port) + os.linesep)
 
-        s.close()
+        net.close()
 
 except:
-    print("In Saliendo . .. ")
+    print("__Exit__")
     sys.exit(0)
